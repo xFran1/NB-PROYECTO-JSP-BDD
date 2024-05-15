@@ -12,7 +12,7 @@
 <body class="fade-in">
 <div class="index" id="index"></div>
     <div class="flex">
-        <div class="leaderboard">TABLA DE CLASIFICACIÓN</div>
+        <div class="leaderboard" id="leaderboard">TABLA DE CLASIFICACIÓN</div>
 
         <div class="opciones-inicio">
             <div class="inicio-Sesion" id="iniciarSesion">INICIAR SESIÓN</div>

@@ -92,7 +92,7 @@
     </div>
     
     <div class="newUser">
-        New User? <a class="signUp" href="registrarse.html">Sign up</a>
+        New User? <a class="signUp" href="registrarse.jsp">Sign up</a>
     </div>
             </div>
             

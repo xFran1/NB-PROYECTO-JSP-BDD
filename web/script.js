@@ -374,7 +374,11 @@ var continueCheckbox = document.getElementById("continueCheckbox")
 
 let index = document.getElementById("index")
 if(index){
+    document.getElementById("leaderboard").addEventListener("click",function(){
 
+        window.location.href="clasificacion.jsp";
+
+    });
     document.getElementById("opcion1").addEventListener("click",function(){
  
     
@@ -443,6 +447,8 @@ let menu1 = document.getElementById("menu1")
 
 
 localStorage.setItem("contadorGan", contadorGanadas);
+
+
 
 
 aleatorio()
@@ -713,7 +719,7 @@ if(inicioSesion1){
           let password = document.getElementById("password");
     
           let usuarioInvalido = document.getElementById("divErrorUsuario")
-          let contraInvalida = document.getElementById("divErrorContraseña")
+          let contraInvalida = document.getElementById("divErrorContrasena")
     
          
           if(usuarioIDValue.trim()===""){
@@ -779,13 +785,16 @@ if(continueCheckbox){
           });
       
           document.getElementById("mostrar").addEventListener("click",function(){//Cada vez que se clicke en el boton para ver la contraseña se borra todos los hijos para que solo se vea una imagen
-           while (divOjo.firstChild) {
+
+              while (divOjo.firstChild) {
             divOjo.removeChild(divOjo.firstChild);
+            
         }
        
             if(divOjoApariencia){
               divOjo.appendChild(spanElementNoVer);
               password.type="password"
+
       
             }else{
               divOjo.appendChild(spanElementVer);
@@ -797,12 +806,12 @@ if(continueCheckbox){
           });
     
           document.getElementById("mostrar1").addEventListener("click",function(){//Cada vez que se clicke en el boton para ver la contraseña se borra todos los hijos para que solo se vea una imagen
-            while (divOjo1.firstChild) {
+              while (divOjo1.firstChild) {
              divOjo1.removeChild(divOjo1.firstChild);
          }
              if(divOjoApariencia1){
                divOjo1.appendChild(spanElementNoVer1);
-               password.type="password"
+               passwordVerificar.type="password"
        
              }else{
                divOjo1.appendChild(spanElementVer1);
@@ -828,8 +837,8 @@ if(continueCheckbox){
   
             let correoInvalido = document.getElementById("divErrorCorreo")
             let usuarioInvalido = document.getElementById("divErrorUsuario")
-            let contraInvalida = document.getElementById("divErrorContraseña")
-            let contraInvalida1 = document.getElementById("divErrorContraseña1")
+            let contraInvalida = document.getElementById("divErrorContrasena")
+            let contraInvalida1 = document.getElementById("divErrorContrasena1")
   
             let correoVerificarValue = document.getElementById("usuarioCorreo").value
             let correoVerificar = document.getElementById("usuarioCorreo")
