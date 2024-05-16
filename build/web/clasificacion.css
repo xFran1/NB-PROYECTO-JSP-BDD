@@ -27,10 +27,81 @@ body{
 
 .tabla{
     margin-top: 250px;
-    background-color: red;
     position: absolute;
-    width: 50%;
+    background-color: #000085;
+    width: 42%;
     height: 60%;
     border-radius: 10px;
+    margin-left: 35px;
     
+}
+.divInteriorScroll{
+    flex-direction: column;
+    margin-top: 70px;
+    position: absolute;
+    height: 480px;
+    width: 100%;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.scrollbox{
+    overflow: auto;
+padding-right: 0px;
+visibility:hidden;
+scrollbar-color: #09f transparent;
+}
+.scrollbox-inner,
+.scrollbox:hover{
+    visibility: visible;
+}
+
+.grande{
+ background-color: blue;
+    font-size: 35px;
+    margin-left: 16px; 
+}
+.tabla{
+    
+    font-size: 22px;
+}
+.top1{
+    width: 200px;
+    margin-top: 10px;
+}
+
+
+.nick{
+    width: 300px;
+}
+
+.puntaje{
+    width: 270px;
+}
+
+.flex{
+    display: flex;
+}
+.topTabla{
+    width: 210px;
+    text-align: center;
+        
+}
+
+.nickTabla{
+    width:300px; 
+    text-align: center;
+        
+}
+
+.puntajeTabla{
+    text-align: center;
+    width: 270px;
+}
+
+.linea{
+    width: 600px;
+    height: 1px;
+    background-color: grey;
+    margin: 0 auto;
 }
